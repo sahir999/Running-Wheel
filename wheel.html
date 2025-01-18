@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Running Wheel</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #37dde3;
+            overflow: hidden;
+        }
+
+        .wheel {
+            width: 350px;
+            height: 350px;
+            border: 10px solid transparent;
+            border-top: 30px solid rgb(235, 128, 20);
+            border-right: 30px solid rgb(255, 255, 254);
+            border-bottom: 30px solid rgb(10, 196, 10);
+            border-left: 30px solid rgb(73, 88, 201);
+            border-radius: 50%;
+            position: relative;
+            animation: spin 3s linear infinite;
+            animation-direction: alternate;
+            background: transparent;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wheel"></div>
+</body>
+</html>
